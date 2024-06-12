@@ -24,7 +24,8 @@ document.querySelectorAll(".model-viewer").forEach(s =>{
             object: object,
             render: renderer,
             scene: scene,
-            camera: camera
+            camera: camera,
+            zoom: s.getAttribute('zoom')
         });
     },
     function (xhr) {
@@ -56,7 +57,7 @@ function animate(){
     all_objects.forEach((data, i) =>{
         if(data.object){
             data.object.rotation.y += 0.005;
-            data.object.position.y = Math.sin(frame_3d/ 100 + i) * 0.5 - 0.5;
+            data.object.position.y = Math.sin(frame_3d/ 100 + i) * 0.5 - 0.2 - data.zoom * 0.1;
         }
         data.render.render( data.scene, data.camera );
     })
