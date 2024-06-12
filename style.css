@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Fontspring-light';
-    src: url('./fonts/Fontspring-DEMO-visbycf-light.otf') format('truetype');
+    src: url("./fonts/Roboto-Light.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Fontspring-heavy';
-    src: url('./fonts/Fontspring-DEMO-visbycf-heavy.otf') format('truetype');
+    src: url('./fonts/Roboto-Bold.ttf') format('truetype');
 }
 
 
