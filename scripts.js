@@ -9,7 +9,7 @@ window.addEventListener("scroll", ()=>{
     }
 })
 
-let screen_0 = document.getElementById("roll-and-stamina-banner");
+let screen_0 = document.getElementById("roll_and_stamina-banner");
 let screen_1 = document.getElementById("kamiis-door-banner");
 
 if(screen_0 != undefined){
