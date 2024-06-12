@@ -1,0 +1,85 @@
+:root{
+    --second-color: rgb(17, 132, 65);
+    --invert-second-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Fontspring-light';
+    src: url('./fonts/Fontspring-DEMO-visbycf-light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fontspring-heavy';
+    src: url('./fonts/Fontspring-DEMO-visbycf-heavy.otf') format('truetype');
+}
+
+
+body {
+    font-family: 'Fontspring-light', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Fontspring-heavy', sans-serif;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    font-family: 'Fontspring-heavy', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    font-size: 30px;
+    font-family: 'Fontspring-heavy', sans-serif;
+    letter-spacing: 4px;
+}
+.navbar-brand {
+    font-size: 50px;
+}
+
+#navbar-panel{
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center;
+}
+
+.row{
+    padding: 10px 0px;
+}
+
+#test{
+    background-color: blue;
+}
+
+.model-viewer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#block-left{
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--second-color);
+    color: var(--invert-second-color);
+}
+
+#block-right{
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--second-color);
+    color: var(--invert-second-color);
+}
+
+#block-full{
+    border-radius: 0px 0px 0px 0px;
+    background-color: var(--second-color);
+    color: var(--invert-second-color);
+}
